@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+
+  flex-direction: column;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  background: #FF512F;
+  background: linear-gradient(
+    to right,
+    #FF512F,#DD2476
+  );
+}
+
+.todo {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 900px;
+  height: 250px;
+  background-color: #fff;
+
+  border-radius: 3px;
+  box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.26);
+  margin-bottom: 60px;
+}
+
+.todo__input {
+  width: 400px;
+  height: 50px;
+  border: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+  text-align: center;
+  color: #666;
+  font-family: 'Roboto';
+  margin-bottom: 50px;
+}
+
+.todo__input:focus {
+  outline: 0;
+
+}
+
+.todo__input:focus::placeholder {
+ color: transparent;
+}
+
+.todo__input::placeholder {
+  text-align: center;
+}
+
+
+.todo__button {
+  width: 350px;
+  height: 45px;
+  border: 1px solid #DD2476;
+  font-family: 'Roboto';
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo__button:hover {
+  background-color: #DD2476;
+  color: #fff;
+}
+
+
+
+.item {
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  width: 900px;
+  height: 70px;
+  background-color: #fff;
+
+  border-radius: 3px;
+  box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.26);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item__status {
+  width: 5px;
+  height: 40px;
+  background-color: #DD2476;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.item__id {
+  margin-left: 20px;
+}
+
+.item__text {
+  font-family: 'Roboto';
+  margin-left: 20px;
+}
+
+.item__time {
+  font-family: 'Roboto';
+  margin-left: 20px;
+  color: #888;
+}
+
+.item__tools {
+  margin-left: auto;
+}
+
+.item__remove {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.item__edit{
+  cursor: pointer;
+  margin-right: 10px;
+
+}
